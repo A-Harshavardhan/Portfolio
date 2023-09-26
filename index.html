@@ -1,0 +1,440 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        /* Custom CSS for the Scroll to Top button */
+        .scroll-to-top {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          display: none;
+          z-index: 1000;
+        }
+        #para{
+            text-indent: 100px;
+            text-align: justify;
+        }
+        .nav-link{
+          text-transform: uppercase;
+        }
+        .vertical{
+          border-left: 3px solid white;
+          height: 1px;
+        }
+        .text-yellow{
+          color: yellow;
+        }
+        .text-orange{
+          color: orange;
+        }
+        .text-aqua{
+          color: aqua;
+        }
+        .text-lightred{
+          color: rgb(239, 110, 110);
+        }
+        .text-red{
+          color: red;
+        }
+        .text-lightblue{
+          color: rgb(100, 100, 213);
+        }
+      </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md text-center bg-success border rounded sticky- ">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <span class="fw-bold text-secondary text-white"> <img src="images/Harsha-logo.png" width="50px" height="40px" alt=""> Harsha's Portfolio</span>
+            </a>
+
+            <!-- Toggler button -->
+            <button class="navbar-toggler shadow-none border-1" type="button" data-bs-toggle="collapse" data-bs-target="#mainnav" aria-controls="mainnav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- adding toggle button -->
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse justify-content-end align-center " id="mainnav">
+                <ul class="navbar-nav gap-1 ">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white "><i class="bi bi-house-fill"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link text-white"><i class="bi bi-file-person-fill"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link text-white"><i class="bi bi-list-stars"></i> Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link text-white"><i class="bi bi-alt"></i> Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link text-white"><i class="bi bi-person-rolodex"></i> Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="Home" class="bg-dark text-white">
+        <div class="container-lg">
+            <div class="row justify-content-start ">
+                <div class="col-md-6 align-center py-5 my-5 text-center text-md-start">
+                    <h1>
+                        <div class="display-2 pt-4">Hello Welcome to</div>
+                        <div class="display-5"><span class="text-danger">Harsha's</span> Portfolio</div>
+                    </h1>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, tenetur.</p>
+                    <a href="#" class="btn btn-lg btn-success text-white mb-4"> Let's chat <i class="bi bi-chat-dots"></i></a> <br>
+
+                    <!-- offcanvas -->
+                    <a href="#sidebar" class="text-decoration-none text-success" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+                        Explore my other Websites <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                    <!-- offcanvas implementation -->
+                    <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label" >
+                        <div class="offcanvas-header">
+                            <h2 class="offcanvas-title text-yellow"><i>My other Websites</i></h2>
+                            <!-- close button -->
+                            <button class="btn-close bg-white" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <!-- Cards using bootstrap -->
+                            <div class="card mt-3 bg-dark text-white">
+                                <img src="images/Untitled design.jpg" alt="Book image">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Book's Store</h4>
+                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptate minima! Reiciendis dolores laboriosam unde doloribus, maiores pariatur recusandae ea?</p>
+                                    <a href="#" class="btn btn-success text-white">View Website <i class="bi bi-arrow-right"></i> </a>
+                                </div>
+                            </div>
+                            <div class="card mt-3 bg-dark text-white">
+                                <img src="images/Untitled design.jpg" alt="Book image">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Book's Store</h4>
+                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptate minima! Reiciendis dolores laboriosam unde doloribus, maiores pariatur recusandae ea?</p>
+                                    <a href="#" class="btn btn-success text-white">View Website <i class="bi bi-arrow-right"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 align-center d-none d-md-block py-5 my-5 ms-5">
+                    <img src="images/portfolio.jpg" class="img-fluid rounded-5" alt="Harsha's image" style="height: 450px;" >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="bg-dark text-white">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-4">
+                    <img src="images/Harsha .jpg" class="img-fluid my-lg-5 py-lg-5 mt-3 rounded-5 bg-dark"  alt="Harsha image">
+                </div>
+                <div class="col-lg-7 my-lg-5 pt-5 pb-2">
+                    <h2 class="pb-3 text-danger text-uppercase" > <i class="bi bi-person-lines-fill text-altlight"></i> About me</h2>
+                    <hr class="border border-2">
+                    <p class="lead text-altgreen pt-1 pb-3 mb-2" id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas impedit quasi, deserunt in ab modi! Aliquid illum laudantium nobis quidem facere corporis aperiam commodi itaque neque eligendi. Aspernatur, deleniti voluptates officiis culpa quam quisquam nihil. Ea enim deserunt explicabo ducimus voluptates, labore tenetur eos corrupti ab eligendi aliquid qui provident voluptatibus eaque excepturi, non reprehenderit distinctio unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias vel, impedit obcaecati eos sequi officiis magni eaque dolores repudiandae illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, voluptates.</p>
+                    <button class="btn btn-success mb-5">Download Resume</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills" class="bg-dark pt-5">
+        <div class="container-lg py-5 justify-content-between-sm" >
+            <h2 class="text-center text-yellow pb-1 text-uppercase">
+               <i class="bi bi-android "></i> Technical Skills
+            </h2>
+          <hr class="border border-2">
+            <div class="row justify-content-center gap-5 pt-3">
+                <div class="card bg-dark text-white" style="width: 18rem;">
+                    <img src="images/python.jpg" alt="java" class="img-fluid" >
+                    <div class="card-body text-center py-2">
+                        <h5 class="card-title text-danger ">Python Programming</h5>
+                        <h6 class="card-subtitle text-altgreen pb-3">Python</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sequi vel culpa consequatur laudantium debitis provident consectetur dolores eius aliquam.</p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white" style="width: 18rem;">
+                    <img src="images/java.png" alt="java" class="img-fluid" >
+                    <div class="card-body text-center py-2">
+                        <h5 class="card-title text-danger">Java Programming</h5>
+                        <h6 class="card-subtitle text-altgreen pb-3">Core Java</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sequi vel culpa consequatur laudantium debitis provident consectetur dolores eius aliquam.</p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white" style="width: 18rem;">
+                    <img src="images/sql.png" alt="java" class="img-fluid" >
+                    <div class="card-body text-center py-2">
+                        <h5 class="card-title text-danger">SQL</h5>
+                        <h6 class="card-subtitle text-altgreen pb-3">Structured Query Language</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sequi vel culpa consequatur laudantium debitis provident consectetur dolores eius aliquam.</p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white" style="width: 18rem;">
+                    <img src="images/dsa.jpg" alt="java" class="img-fluid" >
+                    <div class="card-body text-center py-2">
+                        <h5 class="card-title text-danger">DSA</h5>
+                        <h6 class="card-subtitle text-altgreen pb-3">Data Structures and Algorithm</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sequi vel culpa consequatur laudantium debitis provident consectetur dolores eius aliquam.</p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white" style="width: 18rem;">
+                    <img src="images/html.jpg" alt="java" class="img-fluid" >
+                    <div class="card-body text-center py-2">
+                        <h5 class="card-title text-danger">HTML</h5>
+                        <h6 class="card-subtitle text-altgreen pb-3">HyperText Markup Language</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sequi vel culpa consequatur laudantium debitis provident consectetur dolores eius aliquam.</p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white" style="width: 18rem;">
+                    <img src="images/css.jpg" alt="java" class="img-fluid" >
+                    <div class="card-body text-center py-2">
+                        <h5 class="card-title text-danger">CSS</h5>
+                        <h6 class="card-subtitle text-altgreen pb-3">Cascading Style Sheets</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sequi vel culpa consequatur laudantium debitis provident consectetur dolores eius aliquam.</p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white" style="width: 18rem;">
+                    <img src="images/javascript.jpg" alt="java" class="img-fluid" >
+                    <div class="card-body text-center py-2">
+                        <h5 class="card-title text-danger">JS</h5>
+                        <h6 class="card-subtitle text-altgreen pb-3">JavaScript</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sequi vel culpa consequatur laudantium debitis provident consectetur dolores eius aliquam.</p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white" style="width: 18rem;">
+                    <img src="images/bootstrap_image.jpg" alt="java" class="img-fluid" >
+                    <div class="card-body text-center py-2">
+                        <h5 class="card-title text-danger">Bootstrap</h5>
+                        <h6 class="card-subtitle text-altgreen pb-3">CSS Framework</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sequi vel culpa consequatur laudantium debitis provident consectetur dolores eius aliquam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates section -->
+    <section id="certificate" class="bg-dark text-white py-5">
+        <div class="container-lg ">
+            <h2 class="text-center pt-5 pb-1 text-orange text-uppercase"> <i class="bi bi-award-fill"></i> Certifications</h2>
+            <hr class="border border-2">
+            <div class="row justify-content-evenly pb-5">
+                <!-- <div class="col-lg-5 pt-5 ">
+                    <img src="/images/certificate.jpg" alt="certificate image">
+                </div> -->
+                <div class="col-lg-5 pb-5 pt-4">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item bg-success">
+                            <h2 class="accordion-header" id="headingOne">
+                              <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Java Certification
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                              <div class="accordion-body bg-dark text-white">
+                                <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis consequuntur maiores id eius et blanditiis dicta provident est. Quod, nesciunt?</p>
+                                <a href="#" class="btn btn-success">View Certificate <i class="bi bi-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header " id="headingTwo">
+                              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Python Certification
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                              <div class="accordion-body bg-dark text-white">
+                                <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi quam sapiente vel deleniti quisquam perferendis ab accusantium esse illum illo.</p>
+                                <a href="#" class="btn btn-success">View Certificate <i class="bi bi-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapseTwo">
+                                HackerRank Certifications
+                              </button>
+                            </h2>
+                            <div id="collapsethree" class="accordion-collapse collapse fw-bold" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                              <div class="accordion-body bg-dark text-white">
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit facilis sit omnis libero consequatur ipsum aut nulla ex veniam laboriosam?</p>
+                                <a href="#" class="btn btn-success">View Certificates <i class="bi bi-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Communication[English] Certification
+                              </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                              <div class="accordion-body bg-dark text-white">
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur, eius sint voluptas aspernatur ad delectus voluptatum corporis blanditiis? Voluptatibus!</p>
+                                <a href="#" class="btn btn-success">View Certificate <i class="bi bi-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" class="bg-dark text-white py-5">
+      <div class="container-lg">
+        <h2 class="text-center text-aqua pb-1 text-uppercase"><i class="bi bi-stars"></i> Projects</h2>
+        <hr>
+        <div class="row justify-content-evenly">
+          <div class="card bg-dark text-white" style="width: 18rem;">
+            <img src="images/book.jpg" alt="Book image" class="img-fluid">
+            <div class="card-body">
+              <h4 class="card-title">Book store</h4>
+              <h5 class="card-subtitle">Website</h5>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatum incidunt esse reprehenderit necessitatibus ex officia vitae fugit reiciendis magnam.</p>
+              <a href="" class="btn btn-success">View site <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="card bg-dark text-white" style="width: 18rem;">
+            <img src="images/portfolio-image.jpg" alt="Book image" class="img-fluid">
+            <div class="card-body">
+              <h4 class="card-title">Personal Portfolio</h4>
+              <h5 class="card-subtitle">Website</h5>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatum incidunt esse reprehenderit necessitatibus ex officia vitae fugit reiciendis magnam.</p>
+              <a href="" class="btn btn-success">View site <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="bg-dark text-white pb-5 pt-3">
+      <div class="container-md ">
+        <div class="text-center">
+          <h2 class="fw-bold text-warning text-uppercase"><i class="bi bi-person-rolodex"></i> Contact</h2>
+          <p class="lead">For any quries contact me</p>
+        </div>
+        <hr>
+
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <label for="email" class="form-label mt-4">Enter your Email</label>
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-envelope-plus-fill"></i>
+                </span>
+                <input type="email" class="form-control" placeholder="e.g.brendonmccullum42@gmail.com">
+                <span class="input-group-text">
+                  <i class="bi bi-question-circle"></i>
+                </span>
+              </div>
+
+              <label for="name" class="form-label mt-4">Enter your Name</label>
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-person-fill"></i>
+                </span>
+                <input type="name" class="form-control" placeholder="Brendon Mccullum">
+                <span class="input-group-text">
+                  <i class="bi bi-question-circle"></i>
+                </span>
+              </div>
+
+              <!-- inputgroup and selectors -->
+              <label for="query" class="form-label mt-4">Common queries</label>
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-chat-right-dots-fill"></i>
+                </span>
+                <select name="" id="query" class="form-select">
+                  <option value="site issues">Site Issues</option>
+                  <option value="image issues">Image Issues</option>
+                  <option value="other issues">Other Issues</option>
+                </select>
+              </div>
+
+              <!-- Floating form -->
+              <div class="form-floating mt-5">
+                <textarea name="text" id="q" class="form-control" style="height: 140px;"></textarea>
+                <label for="q"> your queries...</label>
+              </div>
+
+              <!-- submit button -->
+              <div class="text-center">
+                <button class="btn btn-success my-4" type="button">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <section class="bg-black text-white">
+      <div class="d-flex justify-content-center pt-4">
+        <div class="p-2"><a href="#" class="text-decoration-none text-blue"><i class="bi bi-facebook "></i></a></div>
+        <div class="p-2"><a href="#" class="text-decoration-none "><i class="bi bi-whatsapp text-success"></i></a></div>
+        <div class="p-2"><a href="#" class="text-decoration-none "><i class="bi bi-instagram text-lightred"></i></a></div>
+        <div class="p-2"><a href="#" class="text-decoration-none "><i class="bi bi-twitter-x text-white"></i></a></div>
+        <div class="p-2"><a href="#" class="text-decoration-none "><i class="bi bi-linkedin text-lightblue"></i></a></div>
+        <div class="p-2"><a href="#" class="text-decoration-none "><i class="bi bi-youtube text-red"></i></a></div>
+        <div class="p-2"><a href="#" class="text-decoration-none "><i class="bi bi-threads text-white"></i></a></div>
+      </div>
+      <div class="container text-center">
+        <h5 class="pt-2 pb-3">&copy; All rights reserved &nbsp;<span class="vertical"> &nbsp; </span>Thanks for visiting!</h5>
+      </div>  
+    </section>
+
+    <!-- Scroll to Top Button -->
+  <button class="btn btn-success scroll-to-top bg-opacity-10" id="btnScrollToTop">
+    <i class="bi bi-arrow-up border-0 rounded-pill"></i>
+  </button>
+
+  <!-- Include Bootstrap JS and jQuery (optional) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Show or hide the button based on scroll position
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $('.scroll-to-top').fadeIn();
+        } else {
+          $('.scroll-to-top').fadeOut();
+        }
+      });
+
+      // Scroll to the top when the button is clicked
+      $('#btnScrollToTop').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 0); // 800 milliseconds for the animation
+        return false;
+      });
+    });
+  </script>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
