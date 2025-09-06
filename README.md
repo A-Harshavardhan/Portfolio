@@ -19,9 +19,7 @@ It's a beginner-friendly portfolio that helped reinforce what I learned and serv
 - **CSS3**
 - **Bootstrap 5**
 
-## 📸 Screenshots
-
-*Add some screenshots here if you'd like, or use [shields.io](https://shields.io) badges.*
+## Visit site - https://a-harshavardhan.github.io/Portfolio/
 
 ## 📂 Folder Structure
 
@@ -33,5 +31,3 @@ It's a beginner-friendly portfolio that helped reinforce what I learned and serv
 ├── images/
 │   └── ...
 └── README.md
-
-## Visit site - https://a-harshavardhan.github.io/Portfolio/
